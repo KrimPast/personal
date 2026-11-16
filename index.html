@@ -9,6 +9,53 @@
       type="text/css"
       href="vendor/semantic-ui/semantic.min.css"
     />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        ((k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a));
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js?id=114274031",
+        "ym",
+      );
+
+      ym(114274031, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/114274031"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -21,8 +68,11 @@
     <div class="page">
       <div class="ui text container">
         <div class="ui text menu">
-          <a class="item">Персональная страница</a>
-          <a class="item right">Егоров Никита Сергеевич</a>
+          <h1 class="hidden">
+            Персональная страница Егорова Никиты Сергеевича
+          </h1>
+          <a class="item idle__cursor">Персональная страница</a>
+          <a class="item right idle__cursor">Егоров Никита Сергеевич</a>
         </div>
       </div>
       <div class="ui text container">
@@ -148,13 +198,13 @@
           <div class="item">
             <i class="telegram icon"></i>
             <div class="content">
-              <a href="https://t.me/avelparmen">avelparmen</a>
+              <a target="_blank" href="https://t.me/avelparmen">avelparmen</a>
             </div>
           </div>
           <div class="item">
             <i class="github icon"></i>
             <div class="content">
-              <a href="https://github.com/KrimPast">KrimPast</a>
+              <a target="_blank" href="https://github.com/KrimPast">KrimPast</a>
             </div>
           </div>
         </div>

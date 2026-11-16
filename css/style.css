@@ -28,3 +28,9 @@
     display: flex !important;
     align-items: center !important;
 }
+.idle__cursor{
+    cursor: default !important;
+}
+.hidden{
+    display: none;
+}
